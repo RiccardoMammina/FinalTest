@@ -1,0 +1,12 @@
+<div *ngIf="pokemonObj">
+  <p>ID: {{ pokemonObj.id }}</p>
+  <p>NAME: {{ pokemonObj.name }}</p>
+  <p>WEIGHT: {{ pokemonObj.weight }}</p>
+  <p>HEIGHT: {{ pokemonObj.height }}</p>
+</div>
+
+<button (click)="addTeam()">CATTURA</button>
+<button (click)="addPc()">RIFIUTA</button>
+
+<app-pc [inputAdd]="addToPc"></app-pc>
+<app-team [inputAdd]="addToTeam"></app-team>
